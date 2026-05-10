@@ -46,7 +46,7 @@ export default function Layout() {
               className="text-base font-bold leading-none text-[var(--color-text-primary)]"
               style={{ fontFamily: "var(--font-display)" }}
             >
-              PRODEX
+              Prodash
             </div>
             <div className="mt-0.5 text-[10px] uppercase tracking-[0.1em] text-[var(--color-text-muted)]">
               Dashboard
@@ -69,9 +69,15 @@ export default function Layout() {
               onClick={() => setSidebarOpen(false)}
               className="mb-1 flex items-center gap-2.5 rounded-lg px-3 py-2.5 no-underline transition-all duration-150"
               style={{
-                background: isActive ? "rgba(108, 99, 255, 0.15)" : "transparent",
-                border: isActive ? "1px solid rgba(108, 99, 255, 0.3)" : "1px solid transparent",
-                color: isActive ? "var(--color-accent)" : "var(--color-text-secondary)",
+                background: isActive
+                  ? "rgba(108, 99, 255, 0.15)"
+                  : "transparent",
+                border: isActive
+                  ? "1px solid rgba(108, 99, 255, 0.3)"
+                  : "1px solid transparent",
+                color: isActive
+                  ? "var(--color-accent)"
+                  : "var(--color-text-secondary)",
               }}
             >
               <Icon size={17} />
